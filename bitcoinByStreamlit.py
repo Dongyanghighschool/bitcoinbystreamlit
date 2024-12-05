@@ -15,8 +15,8 @@ st.set_page_config(
 
 st.title('KRW-FIL 가격 차트')
 
-# 페이지를 60초마다 자동 새로고침
-count = st_autorefresh(interval=30000, key="fil_price_autorefresh")
+# 페이지를 10초마다 자동 새로고침
+count = st_autorefresh(interval=10000, key="fil_price_autorefresh")
 
 # 업비트 API에서 시장 코드 가져오기
 @st.cache_data
