@@ -132,6 +132,9 @@ def main():
     # 현재 가격을 차트에 표시
     current_price = merged_df['krw_fil_price'].iloc[-1]
     current_time = merged_df['date_time'].iloc[-1]
+
+    # y=11,847에 빨간색 가로선 추가
+    ax.axhline(y=11847, color='red', linestyle='--', label='기준선 (11,847 KRW)')
     
     # 텍스트로 현재 가격 표시
     ax.text(
